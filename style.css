@@ -1,0 +1,64 @@
+body {
+  font-family: Verdana, sans-serif;
+  background: linear-gradient(
+    90deg,
+    #2a0300,
+    #980700,
+    #3e093e,
+    #000798,
+    #00032a
+  );
+  background-size: 200vw 100vh;
+  color: beige;
+
+  animation: gradient 25s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+a {
+  color: beige;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  #main {
+    grid-template-columns: 1fr;
+  }
+}
+
+#profile {
+  text-align: center;
+}
+
+#profile img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+#contact-info {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
