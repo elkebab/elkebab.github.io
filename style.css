@@ -30,35 +30,32 @@ a {
   color: beige;
 }
 
-h1 {
-  font-size: 2.5rem;
-}
-
 main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 1.5rem;
 }
 
-@media (max-width: 900px) {
-  main {
-    grid-template-columns: 1fr;
-  }
-}
-
-#profile {
-  text-align: center;
-}
-
-#profile img {
+#profile-pic {
   width: 200px;
   border-radius: 50%;
 }
 
-#contact-info {
-  margin-top: 1rem;
+.link-row {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
-  justify-content: center;
+}
+
+iframe {
+  width: 45vw;
+  height: 30vw;
+}
+
+@media (max-width: 900px) {
+  iframe {
+    width: 90vw;
+    height: 50vw;
+  }
 }
