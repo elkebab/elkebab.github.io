@@ -44,6 +44,7 @@ main {
 }
 
 .link-row {
+  max-width: 80vw;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -51,8 +52,8 @@ main {
 }
 
 iframe {
-  width: 45vw;
-  height: 30vw;
+  width: 65vw;
+  height: 35vw;
 }
 
 @media (max-width: 900px) {
